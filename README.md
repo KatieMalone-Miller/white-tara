@@ -1,2 +1,2 @@
 # white-tara
-Implicit Association Test for women in Computing
+Implicit Association Test for Women in Computing
