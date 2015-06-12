@@ -8,8 +8,8 @@
 	$(document).ready(function(){
 		var compsci = {0:"Computer", 1:"Software", 2:"Programmer", 3:"Website", 4:"Code", 5:"Binary", 6:"Machine"};
 		var biology = {7:"Microscope", 8:"Organism", 9:"Habitat", 10:"Plant", 11:"Nature", 12:"Biologist"};
-		var male = {24:"", 25:"", 26:"", 27:"", 28:"", 29:"", 30:"", 31:""};
-		var female = {32:"", 33:"", 34:"", 35:"", 36:"", 37:"", 38:""};
+		var male = {13:"Charles", 14:"Thomas", 15:"Robert", 16:"Daniel", 17:"John"};
+		var female = {18:"Mary", 19:"Jennifer", 20:"Sarah", 21:"Elizabeth", 22:"Lisa"};
 		
 		//Block 1 = compsci/biology or biology/compsci words - practice (20 trials)
 		//Block 2 = male/female names - practice (20 trials)
@@ -19,15 +19,14 @@
 		//Block 6 = Block 5 combination, male/female names (20 trials)
 		//Block 7 = Block 5 combination, male/female names (40 trials)
 		
-		// I AM HERE SO FAR
-		
 		var numBlocks = 7; 																		//number of blocks
-		var numTrials = 20; 																	//Current/starting trials
+		var trialShort = 20;    //Blocks 1, 2, 3, and 6
+		var trialLong = 40;     // Blocks 4, 5, 7
 		var curBlock = 1; 																		//Current block on; always start with 1
 		var curTrial = 1; 																		//Current trial on; always start with 1
 		var c = "?"
 		var start = 0;																			//For timer
-		
+// I'M HERE		
 		$(document).keyup(function(e){	
 		if(curBlock <= numBlocks){																//If curBlock < numBlocks
 			$("#block").html(curBlock);
